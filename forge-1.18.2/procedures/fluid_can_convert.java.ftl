@@ -1,0 +1,1 @@
+world instanceof Level _level &&${input$fluid}.canConvertToSource(_level, new BlockPos((int) ${input$X},(int) ${input$Y},(int) ${input$Z}))

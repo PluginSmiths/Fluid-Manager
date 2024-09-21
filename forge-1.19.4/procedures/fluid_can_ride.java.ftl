@@ -1,0 +1,1 @@
+${input$fluid}.getFluidType().canRideVehicleUnder(${input$vehicle}, ${input$player})

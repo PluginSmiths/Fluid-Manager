@@ -1,0 +1,1 @@
+${input$entity} instanceof LivingEntity _entity && ${input$fluid}.getFluidType().canDrownIn(_entity)

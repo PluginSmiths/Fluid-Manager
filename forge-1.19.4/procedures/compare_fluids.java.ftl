@@ -1,0 +1,1 @@
+${input$a}.is(${input$b})

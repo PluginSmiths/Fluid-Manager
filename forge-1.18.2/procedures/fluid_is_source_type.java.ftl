@@ -1,0 +1,1 @@
+${input$fluid}.isSourceOfType(${input$source})
