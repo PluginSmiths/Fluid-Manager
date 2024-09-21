@@ -1,0 +1,54 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "fluid",
+      "check": "Fluid"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Empty",
+          "isEmpty"
+        ],
+        [
+          "RandomlyTicking",
+          "isRandomlyTicking"
+        ],
+        [
+          "iSource",
+          "is.Source"
+        ],
+        [
+          "LighterThanAir",
+          "getFluidType().isLighterThanAir"
+        ],
+        [
+          "Vanilla",
+          "getFluidType().isVanilla"
+        ],
+        [
+          "Air",
+          "getFluidType().isAir"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "fluids",
+    "toolbox_init": [
+      "<value name=\"fluid\"><block type=\"variables_get_fluid\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "fluid"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "fluid",
+      "check": "Fluid"
+    },
+    {
+      "type": "input_value",
+      "name": "X",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Y",
+      "check": "Number"
+    },
+    {
+      "type": "input_value",
+      "name": "Z",
+      "check": "Number"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "fluids",
+    "toolbox_init": [
+      "<value name=\"fluid\"><block type=\"variables_get_fluid\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>",
+      "<value name=\"X\"><block type=\"coord_x\"></block></value>",
+      "<value name=\"Y\"><block type=\"coord_y\"></block></value>",
+      "<value name=\"Z\"><block type=\"coord_z\"></block></value>"
+    ],
+    "inputs": [
+      "fluid",
+      "X",
+      "Y",
+      "Z"
+    ],
+    "dependencies": [
+      {
+        "name": "world",
+        "type": "world"
+      }
+    ]
+  }
+}

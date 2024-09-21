@@ -1,0 +1,54 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "fluid",
+      "check": "Fluid"
+    },
+    {
+      "type": "field_dropdown",
+      "name": "name",
+      "options": [
+        [
+          "Density",
+          "getFluidType().Density"
+        ],
+        [
+          "Viscosity",
+          "getFluidType().Viscosity"
+        ],
+        [
+          "Temperature",
+          "getFluidType().Temperature"
+        ],
+        [
+          "getFluidType().LightLevel",
+          "getFluidType().LightLevel"
+        ],
+        [
+          "Amount",
+          "isAmount"
+        ],
+        [
+          "OwnHeight",
+          "isOwnHeight"
+        ]
+      ]
+    }
+  ],
+  "inputsInline": true,
+  "output": "Number",
+  "colour": "#606999",
+  "mcreator": {
+    "toolbox_id": "fluids",
+    "toolbox_init": [
+      "<value name=\"fluid\"><block type=\"variables_get_fluid\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "fluid"
+    ],
+    "fields": [
+      "name"
+    ]
+  }
+}

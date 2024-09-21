@@ -1,0 +1,35 @@
+{
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "player",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "vehicle",
+      "check": "Entity"
+    },
+    {
+      "type": "input_value",
+      "name": "fluid",
+      "check": "Fluid"
+    }
+  ],
+  "inputsInline": true,
+  "output": "Boolean",
+  "colour": "#607c99",
+  "mcreator": {
+    "toolbox_id": "fluids",
+    "toolbox_init": [
+      "<value name=\"player\"><block type=\"entity_from_deps\"></block></value>",
+      "<value name=\"vehicle\"><block type=\"entity_from_deps\"></block></value>",
+      "<value name=\"fluid\"><block type=\"variables_get_fluid\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\"></field></block></value>"
+    ],
+    "inputs": [
+      "player",
+      "vehicle",
+      "fluid"
+    ]
+  }
+}
